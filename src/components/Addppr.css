@@ -1,0 +1,140 @@
+.two * {
+    position: relative;
+}
+
+.two {
+    margin: 0;
+    background-color: #e3b5ec;
+    min-height: 100vh;
+    z-index: 0;
+    position: relative;
+}
+
+.two nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f6f0;
+    padding: 1% 2%;
+}
+
+.two nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.two nav p {
+    margin: 0;
+    font-family: cursive;
+}
+
+.two .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding: 0 4%;
+}
+
+.two section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0;
+    gap: 40px;
+}
+
+.two form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    background-color: #e3b5ec;
+    border: solid thin black;
+}
+
+.two form > div {
+    width: -webkit-fill-available;
+}
+
+.two form input, form label {
+    display: block;
+    font-family: cursive;
+}
+
+.two form input {
+    margin: 2% 0;
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+
+.two form span {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+}
+
+.two form span:nth-child(1) {
+    background-color: purple;
+    left: -1%;
+    top: 0;
+    animation: animate1 5s infinite linear;
+    animation-delay: .3s;
+}
+
+.form-inner {
+    padding: 4% 4%;
+}
+
+@keyframes animate1 {
+    0%{
+        top: -1.5%;
+        left: -1.5%;
+    }
+    25%{
+        left: 51%;
+        top: -1.5%;
+    }
+    50% {
+        top: 51.5%;
+        left: 51%;
+    }
+    75% {
+        top: 51.5%;
+        left: -1.5%;
+    }
+    100% {
+        top: -1.5%;
+        left: -1.5%;
+    }
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.two button {
+    all: unset;
+    padding: 1% 2%;
+    border: solid thin purple;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.two button:hover {
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+}
+
+.two .actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+::selection {
+    background-color: purple;
+    color: #FFB400;
+}
+
+.admin * {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.admin {
+    margin: 0;
+    background-color: #e3b5ec;
+    min-height: 100vh;
+}
+
+.admin .top {
+    display: flex;
+    align-items: center;
+    gap: 40%;
+    width: -webkit-fill-available;
+    padding: 0 4%;
+    background-color: #f7f6f0;
+}
+
+.admin .top h2 {
+    font-family: cursive;
+}
+
+.admin .top img {
+    height: 115px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.admin .top h2 span {
+    color: purple;
+}
+
+.admin nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 4%;
+    background-color: #f7f6f0;
+    border-bottom: solid 5px purple;
+}
+
+.admin nav > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.admin nav > div p {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.admin nav > div:nth-child(1) p {
+    color: purple;
+}
+
+.admin nav > div:nth-child(2) a {
+    text-decoration: none;
+    color: purple;
+}
+
+.admin .side-bar {
+    width: 425px;
+    border-right: solid thin purple;
+}
+
+.admin .side-bar a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    border: solid thin purple;
+    border-radius: 10px;
+    text-align: center;
+    margin: 4% auto;
+    transition: all .3s;
+    width: 60%;
+}
+
+.admin .side-bar .active {
+    display: block;
+    background-color: purple;
+    color: white;
+    transform: translate(8px, 0);
+}
+
+.admin .side-bar a:hover {
+    background-color: purple;
+    color: white;
+}
+
+.admin .side-bar h1 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.admin .side-bar h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80%;
+    background-color: purple;
+    margin: auto;
+}
+
+.admin main {
+    display: flex;
+    padding: 2% 0;
+    max-height: 92vh;
+}
+
+.admin .nuisances-content {
+    display: none;
+    width: -webkit-fill-available;
+    padding: 0 4%;
+    overflow-y: scroll;
+}
+
+.admin .crumb-bread {
+    font-weight: 700;
+}
+
+.admin .crumb-bread a {
+    text-decoration: none;
+    color: black;
+}
+
+.admin .crumb-bread span {
+    color: purple;
+    font-style: italic;
+}
+
+.admin .nuisances-content h2 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.admin .welcome {
+    width: -webkit-fill-available;
+    padding: 0 4%;
+    overflow-y: auto;
+}
+
+.admin .welcome h2 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.admin .welcome h2 span {
+    font-family: cursive;
+}
+
+.admin table {
+    width: -webkit-fill-available;
+    border: solid thin black;
+    border-collapse: collapse;
+}
+
+.admin table th, tr, td {
+    border: solid thin black;
+    border-collapse: collapse;
+    padding: 8px;
+    word-break: normal;
+    text-align: center;
+}
+
+.admin table tr:nth-child(2n-2) {
+    background-color: purple;
+    color: white;
+}
+
+.admin table th:nth-child(1) {
+    width: 5%;
+}
+
+.admin table th:nth-child(2) {
+    width: 15%;
+}
+
+.admin table th:nth-child(3) {
+    width: 20%;
+}
+
+.admin table th:nth-child(4) {
+    width: 20%;
+}
+
+.admin table th:nth-child(5) {
+    width: 20%;
+}
+
+.admin table th:nth-child(6) {
+    width: 20%;
+}
+
+.admin table td:nth-child(6) a {
+    text-decoration: none;
+    color: red;
+    padding: 0 2%;
+}
+
+.admin #users table td:nth-child(6) a:nth-child(1) {
+    text-decoration: none;
+    color: #FFB400;
+    padding: 0 2%;
+}
+
+.admin #users table th:nth-child(1) {
+    width: 5%;
+}
+
+.admin #users table th:nth-child(2) {
+    width: 15%;
+}
+
+.admin #users table th:nth-child(3) {
+    width: 20%;
+}
+
+.admin #users table th:nth-child(4) {
+    width: 20%;
+}
+
+.admin #users table th:nth-child(5) {
+    width: 15%;
+}
+
+.admin #users table th:nth-child(6) {
+    width: 25%;
+}
+
+.admin .error {
+    color: red;
+    font-weight: 700;
+    text-align: center;
+}
+
+.admin .success {
+    color: green;
+    font-weight: 700;
+    text-align: center;
+}
+
+.admin form {
+    width: 450px;
+    padding: 2% 4%;
+    border: solid medium rgb(17,169,212);
+    background-color: white;
+}
+
+.admin form label {
+    display: block;
+    margin-top: 4%;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.admin form input {
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    border: solid thin rgb(17,169,212);
+    width: -webkit-fill-available;
+}
+
+.admin form input:focus {
+    outline: none;
+    background-color: rgba(17,169,212, 0.4);
+}
+
+.admin form h1 {
+    margin: 1% auto;
+    text-align: center;
+}
+
+.admin form h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80%;
+    margin: 1% auto;
+    background-color: rgb(17,169,212);
+}
+
+.admin form button {
+    all: unset;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    font-weight: 600;
+    border: solid thin rgb(17,169,212);
+    float: right;
+    margin-top: 4%;
+    transition: all .3s;
+}
+
+.admin form button:hover {
+    cursor: pointer;
+    background-color: rgb(17,169,212);
+    color: white;
+}
+
+.admin form button:focus {
+    cursor: pointer;
+    background-color: rgb(17,169,212);
+    color: white;
+}
+
+.admin select {
+    width: -webkit-fill-available;
+    padding: 10px;
+    font-size: 1em;
+    border: solid thin rgb(17,169,212);
+    transition: all .3s;
+}
+
+.admin select:focus {
+    outline: none;
+}
+
+.admin select option {
+    text-align: center;
+    transition: all .3s;
+}
+
+.admin select option:hover {
+    cursor: pointer;
+    background-color: rgba(17,169,212, 0.2);
+}
+
+.admin .form {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+.admin form p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: right;
+}
+
+.admin form p i:hover {
+    cursor: pointer;
+}
+
+.admin .add-user {
+    display: block;
+    border: solid thin purple;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    margin: 2% auto;
+    width: fit-content;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.admin .add-user:hover {
+    background-color: purple;
+    color: white;
+}

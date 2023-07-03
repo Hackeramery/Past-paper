@@ -1,0 +1,117 @@
+   /* CSS styles for the page layout */
+#container body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #container {
+    background-color:#e3b5ec;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  #container #sidebar {
+    width: 200px;
+    background-color: #f7f6f0;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  #container   #content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* CSS styles for the search bar */
+  #container   #search-container {
+    margin-bottom: 20px;
+  }
+  
+  #container   #search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #container   #search-button{
+      float: right;
+      margin-top: 5px;
+      padding: 5px 10px;
+      background-color: #e3b5ec;
+      border-radius: 10px;
+  }
+  
+  /* CSS styles for the list */
+  #container   #list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #container   #list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  #container   #list li:hover {
+    text-decoration: underline;
+  }
+
+  #container .pp{
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#container th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#container table > tbody > tr > td:nth-child(6) a:nth-child(1) {
+  background-color: #f7f6f0;
+  padding: 2% 5%;
+  border-radius: 10px;
+  color: black;
+  margin: 0 4%;
+  font-weight: 600;
+}
+
+#container table > tbody > tr > td:nth-child(6) a:nth-child(2) {
+  background-color: purple;
+  padding: 2% 5%;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+#container table td img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+#container .no{
+  width: 20px;
+
+}
+
+#admin{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 2% 8%;
+  color: white;
+  background-color: purple;
+  border: unset;
+  border-radius: 10px;
+  padding: 10px;
+}
